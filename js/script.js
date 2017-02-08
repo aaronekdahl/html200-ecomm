@@ -48,3 +48,9 @@ var products = [
     "imageTitle": "twill.jpg"
   }
 ]
+
+for (var key in products) {
+  console.log(products[key].name);
+  console.log(products[key].description);
+  console.log(products[key].price);
+}
