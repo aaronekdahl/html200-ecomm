@@ -1,0 +1,9 @@
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+nav ul li {
+  padding: 2rem;
+}
