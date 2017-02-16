@@ -49,8 +49,14 @@ var products = [
   }
 ]
 
-//for (var key in products) {
-//   console.log(products[key].name);
-//   console.log(products[key].description);
-//   console.log(products[key].price);
-//}
+//Week 4 HW Loop fix
+
+
+
+
+// Week 5 HW Form Handle Function - Not sure this is doing what is being asked but it's doing something!
+function formVal() {
+  console.log(document.sortItem.name.value);
+  console.log(document.sortItem.price.value);
+  event.preventDefault();
+}
