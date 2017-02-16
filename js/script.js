@@ -50,8 +50,7 @@ var products = [
 ]
 
 //Week 4 HW Loop fix
-
-
+//???
 
 
 // Week 5 HW Form Handle Function - Not sure this is doing what is being asked but it's doing something!
