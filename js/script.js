@@ -49,13 +49,39 @@ var products = [
   }
 ]
 
+//Week 6 Cart Function - Class Example
+//var arr = ["one", "two"] just for fun
+function sumPrices(cartArray) {
+  //for loop through arrray, sum value of price attribute for each object
+  var total = 0;
+
+  for(var i = 0; i < cartArray.length; i++) {
+    //console.log(cartArray[i].price); (uncomment to see all prices listed)
+    if(cartArray[i].price) {
+      total = total + cartArray[i].price;
+    }
+  }
+  //todo: print total as html to page next to cart icon
+  console.log(total);
+}
+
+
+
+
+
+
+
+
+
+
+
 //Week 4 HW Loop fix
 //???
 
 
 // Week 5 HW Form Handle Function - Not sure this is doing what is being asked but it's doing something!
-function formVal() {
-  console.log(document.sortItem.name.value);
-  console.log(document.sortItem.price.value);
-  event.preventDefault();
-}
+// function formVal() {
+//   console.log(document.sortItem.name.value);
+//   console.log(document.sortItem.price.value);
+//   event.preventDefault();
+// }
