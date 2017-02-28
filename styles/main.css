@@ -1,3 +1,51 @@
+@media screen and (max-width 2800px) {
+  .container {
+    width: 100%;
+  }
+  .col-md-4 {
+    width: 100%:
+  }
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width 1440px) {
+  .container {
+    width: 100%;
+  }
+  .col-md-4 {
+    width: 100%:
+  }
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width 760px) {
+  .container {
+    width: 100%;
+  }
+  .col-md-4 {
+    width: 100%:
+  }
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width 320px) {
+  .container {
+    width: 100%;
+  }
+  .col-md-4 {
+    width: 100%:
+  }
+  img {
+    width: 100%;
+  }
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   margin: .5em;
@@ -30,6 +78,7 @@ figcaption {
   align-items: flex-start;
   align-content: flex-start;
   flex-wrap: wrap;
+  margin: 0px auto;
 }
 
 nav ul {
