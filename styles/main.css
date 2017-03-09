@@ -84,6 +84,11 @@ form {
   padding-top: 3em;
 }
 
+.item {
+  border: 1px solid black;
+  padding-bottom: 10px;
+}
+
 h2 {
   display: flex;
   flex-direction: row;
@@ -92,16 +97,33 @@ h2 {
   padding-bottom: 1em;
 }
 
-img {
+.item h3 {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.item img {
   width: 60%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item p {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+figure {
   align-items: center;
 }
 
 figcaption {
   font-size: .75em;
+  text-align: center;
 }
 
 .container {
@@ -113,6 +135,8 @@ figcaption {
   flex-wrap: wrap;
   margin: 0px auto;
 }
+
+
 
 nav ul {
   display: flex;
