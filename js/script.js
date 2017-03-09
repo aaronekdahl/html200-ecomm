@@ -82,19 +82,34 @@ for (var i = 0; i < products.length; i++) {
 
 // Global Variable Definition
 
-var cart = ["Reversible Plaid", "Wool Cable Knit", "Northern Lights", "Ombre Infinity", "Fringed Plaid", "Multi Color", "Etro Paisley-Print Silk", "Ashby Twill"];
+var cart = [];
+
+//Cheri's Example
+// function addRemoveItem(name) {
+//   //check if cart alreay contains name
+//   var index = cart.indexOf(name)
+//   //if so remove it
+//   if index >= 0 {
+//     cart.splice(index, 1);
+//   } else {
+//     cart.push(name);
+//   }
+//   console.log(cart);
+//
+// }
 
 function addRemoveItem() {
-  //check if cart alreay contains name
-  var index = cart.indexOf("Reversible Plaid")
-  //if so remove it
-  if index >= 0 {
-    cart.splice(index, 1);
-  } else {
-    cart.push("Reversible Plaid");
+  for (var i = 0; i < products.length; i++) {
+    //check if cart alreay contains name
+    var index = products[i].name;
+    //if so remove it
+    if index >= 0 {
+      cart.splice(index, 1);
+    } else {
+      cart.push(name);
+    }
+    console.log(cart);
   }
-  console.log(cart);
-
 }
 
 //-----------------------Name comparison-----------------------------
