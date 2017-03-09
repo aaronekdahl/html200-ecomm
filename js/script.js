@@ -80,69 +80,67 @@ for (var i = 0; i < products.length; i++) {
 
 //week 8 homework
 
-//-----------------------Name comparison-----------------------------
+// Global Variable Definition
 
-function compareNames() {
-  var nameA = a.name.toUpperCase();
-  var nameB = b.name.toUpperCase();
-  if (nameA < nameB) {
-    return -1;
-  }
-  if (nameA > nameB) {
-    return 1;
-  }
-  return 0;
-}
+var cart = ["Reversible Plaid", "Wool Cable Knit", "Northern Lights", "Ombre Infinity", "Fringed Plaid", "Multi Color", "Etro Paisley-Print Silk", "Ashby Twill"];
 
-//Price Comparison
-
-function comparePrice() {
-  //google this one
-}
-
-//Sort by name function
-
-function sortByName() {
-  var sortedArray = products.sort(compareNames);
-  return sortedArray;
-}
-
-//Sort by price function
-
-function sortByPrice() {
-  var sortedArray = nil; //more of what we put here
-  return sortedArray;
-}
-
-//form submittal function
-
-
-function formSubmit() {
-  var sortBy = "price"; //from form
-  var sortedArray;
-  if sortBy == "price" {
-    sortBy = sortByPrice();
-  } else {
-  sortedArray = sortByName();
-  }
-  console.log(sortedArray);
-}
-
-
-/////////////
-
-
-var cart = [];
-
-funtion addRemoveItem(name) {
+function addRemoveItem() {
   //check if cart alreay contains name
-  var index = cart.indexOf(name)
+  var index = cart.indexOf("Reversible Plaid")
   //if so remove it
   if index >= 0 {
     cart.splice(index, 1);
   } else {
-    cart.push(name);
+    cart.push("Reversible Plaid");
   }
   console.log(cart);
 
 }
+
+//-----------------------Name comparison-----------------------------
+//
+// function compareNames() {
+//   var nameA = a.name.toUpperCase();
+//   var nameB = b.name.toUpperCase();
+//   if (nameA < nameB) {
+//     return -1;
+//   }
+//   if (nameA > nameB) {
+//     return 1;
+//   }
+//   return 0;
+// }
+//
+// //Price Comparison
+//
+// function comparePrice() {
+//   //google
+// }
+//
+// //Sort by name function
+//
+// function sortByName() {
+//   var sortedArray = products.sort(compareNames);
+//   return sortedArray;
+// }
+//
+// //Sort by price function
+//
+// function sortByPrice() {
+//   var sortedArray = nil; //more of what we put here
+//   return sortedArray;
+// }
+//
+// //form submittal function
+//
+//
+// function formSubmit() {
+//   var sortBy = "price"; //from form
+//   var sortedArray;
+//   if sortBy == "price" {
+//     sortBy = sortByPrice();
+//   } else {
+//   sortedArray = sortByName();
+//   }
+//   console.log(sortedArray);
+// }
