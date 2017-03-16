@@ -78,8 +78,9 @@ for (var i = 0; i < products.length; i++) {
 //   console.log(total);
 // }
 
-//week 8 homework
+//----------------------------------------------------
 
+//week 8 homework
 // Global Variable Definition
 
 var cart = [];
@@ -98,12 +99,12 @@ var cart = [];
 //
 // }
 
-function addRemoveItem() {
+function addToCart(name, price) {
   for (var i = 0; i < products.length; i++) {
     //check if cart alreay contains name
-    var index = products[i].name;
+    var index = products.name;
     //if so remove it
-    if index >= 0 {
+    if (index >= 0) {
       cart.splice(index, 1);
     } else {
       cart.push(name);
@@ -112,11 +113,11 @@ function addRemoveItem() {
   }
 }
 
-//-----------------------Name comparison-----------------------------
-//
-// function compareNames() {
-//   var nameA = a.name.toUpperCase();
-//   var nameB = b.name.toUpperCase();
+
+//name comparison function
+// function compareName() {
+//   var nameA = products.name.toUpperCase();
+//   var nameB = products.name.toUpperCase();
 //   if (nameA < nameB) {
 //     return -1;
 //   }
@@ -126,7 +127,7 @@ function addRemoveItem() {
 //   return 0;
 // }
 //
-// //Price Comparison
+// //price comparison functtion
 //
 // function comparePrice() {
 //   //google
