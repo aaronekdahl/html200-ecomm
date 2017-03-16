@@ -86,7 +86,7 @@ var cart = [];
 
 //Cheri's Example
 // function addRemoveItem(name) {
-//   //check if cart alreay contains name
+//   //check if cart already contains name
 //   var index = cart.indexOf(name)
 //   //if so remove it
 //   if index >= 0 {
