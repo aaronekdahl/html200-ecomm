@@ -95,6 +95,10 @@ form {
   padding-top: 3em;
 }
 
+.row {
+  padding-bottom: 2em;
+}
+
 .item {
   border: 1px solid black;
   padding-bottom: 1em;
