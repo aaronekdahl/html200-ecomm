@@ -97,6 +97,8 @@ function removeItem(item) {
     cart.splice(index, 1);
   }
 
+//cart item count visible?
+
   var cartItem = document.getElementById("cart")
 
   cartItem.innerHTML = cart.length;
