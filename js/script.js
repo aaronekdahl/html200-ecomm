@@ -104,7 +104,9 @@ function removeItem(item) {
   var cartCount = document.getElementById("cart")
   cartCount.innerHTML = //item?// cart.length //<i class="fa fa-shopping-cart" aria-hidden="true"></i>//
 }
-//Cheri's Example
+
+
+//cheri's cart add/remove example function
 // function addRemoveItem(name) {
 //   //check if cart already contains name
 //   var index = cart.indexOf(name)
