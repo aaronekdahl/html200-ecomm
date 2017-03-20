@@ -78,11 +78,9 @@ for (var i = 0; i < products.length; i++) {
 //   console.log(total);
 // }
 
-//----------------------------------------------------//
+//-------------------------week 8 homework-------------------------------//
 
-//week 8 homework//
 // Global Variable Definition//
-
 var cart = [];
 
 function addItem(item) {
@@ -117,9 +115,9 @@ function removeItem(item) {
 
 
 //name comparison function
-function compareName() {
-  var nameA = products.name.toLowerCase();
-  var nameB = products.name.toLowerCase();
+function compareName(nameA, nameB) {
+  var nameA = products.nameA.name.toLowerCase();
+  var nameB = products.nameB.name.toLowerCase();
   if (nameA < nameB) {
     return -1;
   }
@@ -128,27 +126,29 @@ function compareName() {
   }
   return 0;
 }
-//
+
 // //price comparison function
-//
-// function comparePrice() {
-//   //google
-// }
-//
-// //Sort by name function
-//
-// function sortByName() {
-//   var sortedArray = products.sort(compareNames);
-//   return sortedArray;
-// }
-//
-// //Sort by price function
-//
-// function sortByPrice() {
-//   var sortedArray = nil; //more of what we put here
-//   return sortedArray;
-// }
-//
+function comparePrice(priceA, priceB) {
+  var priceA = products.price.toLowerCase();
+  var priceB = products.price.toLowerCase();
+
+  return priceA.price - priceB.price;
+
+  console.log(products.sort(comparePrice));
+}
+
+//Sort by name function
+function sortByName() {
+  var sortedArray = products.sort(compareNames);
+  return sortedArray;
+}
+
+//Sort by price function
+function sortByPrice() {
+  var sortedArray = products.sort(comparePrice);
+  return sortedArray;
+}
+
 // //form submittal function
 //
 //
