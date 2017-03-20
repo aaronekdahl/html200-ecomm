@@ -96,14 +96,14 @@ function removeItem(item) {
   if (index <= 0) {
     cart.splice(index, 1);
   }
-
-//cart item count visible?
-
-  var cartItem = document.getElementById("cart")
-
-  cartItem.innerHTML = cart.length;
 }
 
+//-------------------------week 9 homework-------------------------------//
+//cart item count updates html
+ window.onload function cartItem(item) {
+  var cartCount = document.getElementById("cart")
+  cartCount.innerHTML = //item?// cart.length //<i class="fa fa-shopping-cart" aria-hidden="true"></i>//
+}
 //Cheri's Example
 // function addRemoveItem(name) {
 //   //check if cart already contains name
@@ -165,5 +165,3 @@ function formSubmit() {
   }
   console.log(sortedArray);
 }
-
-//-------------------------week 9 homework-------------------------------//
