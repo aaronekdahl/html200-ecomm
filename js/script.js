@@ -96,7 +96,10 @@ function removeItem(item) {
   if (index <= 0) {
     cart.splice(index, 1);
   }
-  console.log(cart.length);
+
+  var cartItem = document.getElementById("cart")
+
+  cartItem.innerHTML = cart.length;
 }
 
 //Cheri's Example
@@ -160,3 +163,5 @@ function formSubmit() {
   }
   console.log(sortedArray);
 }
+
+//-------------------------week 9 homework-------------------------------//
