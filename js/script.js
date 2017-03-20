@@ -139,7 +139,7 @@ function comparePrice(priceA, priceB) {
 
 //Sort by name function
 function sortByName() {
-  var sortedArray = products.sort(compareNames);
+  var sortedArray = products.sort(compareName);
   return sortedArray;
 }
 
@@ -149,16 +149,14 @@ function sortByPrice() {
   return sortedArray;
 }
 
-// //form submittal function
-//
-//
-// function formSubmit() {
-//   var sortBy = "price"; //from form
-//   var sortedArray;
-//   if sortBy == "price" {
-//     sortBy = sortByPrice();
-//   } else {
-//   sortedArray = sortByName();
-//   }
-//   console.log(sortedArray);
-// }
+//form submittal function *Not sure what the heck to do here*
+function formSubmit() {
+  var sortBy = "price";
+  var sortedArray;
+  if sortBy == "price" {
+    sortBy = sortByPrice();
+  } else {
+  sortedArray = sortByName();
+  }
+  console.log(sortedArray);
+}
