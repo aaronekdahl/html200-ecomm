@@ -96,14 +96,14 @@ function removeItem(item) {
   if (index <= 0) {
     cart.splice(index, 1);
   }
+  var cartCount = document.getElementById("cart-count");
+  cartCount.innerHTML = cart.length;
 }
 
 //-------------------------week 9 homework-------------------------------//
 //cart item count updates html
- window.onload function cartItem(item) {
-  var cartCount = document.getElementById("cart")
-  cartCount.innerHTML = //item?// cart.length //<i class="fa fa-shopping-cart" aria-hidden="true"></i>//
-}
+ // window.onload function cartItem(item) {
+
 
 
 //cheri's cart add/remove example function
